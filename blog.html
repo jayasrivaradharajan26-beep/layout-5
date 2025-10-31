@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMart - Blogs</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* Header */
+.header {
+  background: #4cd3f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+.logo span {
+  color: #000;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.search-box button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 20px;
+}
+.navbar a.active {
+  border-bottom: 3px solid #4cd3f0;
+  color: #4cd3f0;
+}   
+ /* Content */
+.content {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+}
+.left {
+  width: 25%;
+}
+.right {
+  width: 70%;
+}
+.left ul {
+  list-style: none;
+  padding: 0;
+}
+.left li {
+  margin: 8px 0;
+}
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.blog-card {
+  background: #e9f9ff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.blog-card img {
+  width: 100%;
+  border-radius: 10px;
+} 
+/* Subscribe */
+.subscribe {
+  background: #d9f7ff;
+  text-align: center;
+  padding: 30px;
+}
+.subscribe input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  margin-right: 10px;
+}
+.subscribe button {
+  background: #4cd3f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #baf1ff;
+  padding: 30px;
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-grid div {
+  width: 22%;
+}
+.social {
+  text-align: center;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+  <header class="header">
+    <div class="logo">Electro<span>Mart</span> ⚡</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <button>🔍</button>
+    </div>
+   <div>24/7 🛒 👤</div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="home.html" class="active">Home</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="#">Categories</a>
+    <a href="#">Support</a>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="content">
+    <div class="left">
+      <h3>Popular Posts</h3>
+      <ul>
+        <li>Upcoming Flagship Phones</li>
+        <li>How to Extend Your Laptop’s Battery Life</li>
+        <li>Smart Home Devices Worth Investing In</li>
+      </ul>
+
+      <h3>Categories</h3>
+      <ul>
+        <li>Smartphones</li>
+        <li>Laptops</li>
+        <li>Wearables</li>
+        <li>Home Appliances</li>
+      </ul>
+    </div>
+ <div class="right">
+      <h2>Blog Cards</h2>
+
+      <div class="blog-card">
+        <img src="Mobile combo set.png" alt="">
+        <h4>[Category] Laptops</h4>
+        <p><b>Title:</b> Laptop Buying Guide: Key Features to Consider</p>
+        <p><b>Snippet:</b> From processor to battery – here’s what matters.</p>
+      </div>
+     <div class="blog-card">
+        <h4>[Category] Gaming</h4>
+        <p><b>Title:</b> Exploring the Latest Gaming Consoles</p>
+        <p><b>Snippet:</b> PS5 vs Xbox vs Switch</p>
+      </div>
+    </div>
+  </section>
+ <!-- Subscribe -->
+<section class="subscribe">
+    <h3>Subscribe</h3>
+    <p>Get the latest deals & updates straight to your inbox</p>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h2>ElectroMart ⚡</h2>
+        <p>Powering Your Life<br>One Gadget at a Time</p>
+      </div>
+      <div>
+        <h3>ABOUT</h3>
+        <p>About Us<br>Our Services<br>Contact<br>Terms & Condition</p>
+      </div>
+      <div>
+        <h3>CATEGORY</h3>
+        <p>Smartphone<br>Televisions<br>Laptops<br>Mobiles</p>
+      </div>
+      <div>
+        <h3>CONTACT US</h3>
+        <p>📍 Any town, USA 12345<br>📧 info@example.com<br>📞 (123) 456-7890</p>
+      </div>
+    </div>
+    <div class="social">
+      <p>© 2025 Electro Mart. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+ 
