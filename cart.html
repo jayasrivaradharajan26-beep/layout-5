@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMart - Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header {
+  background: #00c8ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo span {
+  color: #000;
+}
+
+.search-box {
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.search-box input {
+  border: none;
+  padding: 8px 12px;
+  outline: none;
+}
+.search-box button {
+  border: none;
+  background: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Navbar */
+.navbar {
+  text-align: center;
+  background: white;
+  padding: 10px;
+}
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Cart Section */
+.cart {
+  text-align: center;
+  padding: 40px 20px;
+}
+.cart-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dff7ff;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 30px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.cart-box img {
+  width: 220px;
+  border-radius: 20px;
+}
+.cart-details {
+  text-align: left;
+}
+.cart-details h3 {
+  margin-bottom: 10px;
+}
+.quantity {
+  margin: 10px 0;
+}
+.quantity-box {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+}
+.quantity-box button {
+  border: none;
+  background: white;
+  padding: 8px 15px;
+}
+.quantity-box span {
+  padding: 8px 15px;
+}
+.checkout {
+  background: #00c8ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.continue {
+  border: 1px solid #aaa;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Subscribe */
+.subscribe {
+  background: #dff7ff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 40px;
+}
+.subscribe-box {
+  margin-top: 10px;
+}
+.subscribe-box input {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.subscribe-box button {
+  background: #00c8ff;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #dff7ff;
+  padding: 40px 20px;
+  margin-top: 30px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-logo {
+  width: 200px;
+}
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+.footer-links h4 {
+  margin-bottom: 8px;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+   </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Electro<span>Mart</span> ⚡</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <button>🔍</button>
+    </div>
+     <div>24/7 🛒 👤</div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Blogs</a>
+    <a href="#">Categories</a>
+    <a href="#">Support</a>
+  </nav>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Carts</h2>
+    <div class="cart-box">
+      <img src="Smart Watch.png" alt="Smart Watch">
+      <div class="cart-details">
+        <h3>Smart Watch i10</h3>
+        <div class="quantity">
+          <label>Quantity</label>
+          <div class="quantity-box">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+        <p>Total <b>$899</b></p>
+        <button class="checkout">Checkout</button>
+        <button class="continue">Continue Shopping</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe">
+    <h3>Subscribe</h3>
+    <p>Get the latest deals & update straight to your inbox</p>
+    <div class="subscribe-box">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h2>Electro<span>Mart</span> ⚡</h2>
+        <p>Powering Your Life<br>One Gadget at a Time</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>ABOUT</h4>
+          <p>About Us<br>Our Services<br>Contact<br>Terms & Condition</p>
+        </div>
+        <div>
+          <h4>CATEGORY</h4>
+          <p>Smartphone<br>Televisions<br>Laptops<br>Mobiles</p>
+        </div>
+        <div>
+          <h4>CONTACT US</h4>
+          <p>📍 Any town, USA 12345<br>✉ info@example.com<br>☎ (123) 456-7890</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ElectroMart. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
