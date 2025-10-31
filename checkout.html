@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ElectroMart - Checkout</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+/* Header */
+header {
+  background: #00bfff;
+  color: #000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 { font-size: 22px; }
+
+.search-box {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.search-box input {
+  border: none;
+  outline: none;
+}
+
+/* Navbar */
+nav {
+  background: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eaeaea;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 25px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
+
+/* Checkout Section */
+.checkout-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Shipping method & payment */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.options label {
+  font-weight: normal;
+}
+
+.payment-section, .shipping-section {
+  margin-top: 25px;
+}
+
+.order-summary {
+  margin-top: 30px;
+  background: #f0faff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.order-summary table {
+  width: 100%;
+  font-size: 16px;
+}
+.order-summary td {
+  padding: 6px 0;
+}
+.order-summary .total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Buttons */
+button {
+  background: #00bfff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+/* Subscribe */
+.subscribe {
+  background: #c9f4ff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 30px;
+}
+
+.subscribe input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.subscribe button {
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #aef0ff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+footer div { margin: 10px; }
+
+footer h4 { margin-bottom: 10px; }
+
+footer a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 4px 0;
+}
+footer a:hover { color: #00bfff; }
+
+footer .social {
+  text-align: center;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ElectroMart</h1>
+  <div class="search-box"><input type="text" placeholder="Search"></div>
+  <div>24/7</div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="categories.html">Categories</a>
+  <a href="#">Support</a>
+</nav>
+
+<section class="checkout-container">
+
+  <form>
+    <h3>Shipping Information</h3>
+    <label>Full Name</label>
+    <input type="text" placeholder="Amjath Althaf">
+    <div class="options">
+      <input type="text" placeholder="Address">
+      <input type="text" placeholder="City">
+      <input type="text" placeholder="ZIP code">
+      <input type="text" placeholder="State">
+    </div>
+
+    <div class="shipping-section">
+      <h3>Shipping Method</h3>
+      <label><input type="radio" name="ship" checked> Standard Shipping – 3–7 business days</label><br>
+      <label><input type="radio" name="ship"> Express Shipping – 1–2 business days</label>
+    </div>
+
+    <div class="payment-section">
+      <h3>Payment Information</h3>
+      <label><input type="radio" name="payment" checked> Credit Card</label>
+      <label><input type="radio" name="payment"> PayPal</label>
+      <label><input type="radio" name="payment"> Google Pay</label>
+
+      <input type="text" placeholder="Card number">
+      <input type="text" placeholder="Expiration date / CVV">
+    </div>
+
+    <div class="promo">
+      <h3>Promo Code</h3>
+      <input type="text" placeholder="Promo Code">
+      <button type="button">Apply</button>
+    </div>
+
+    <div class="order-summary">
+      <h3>Order Review</h3>
+      <table>
+        <tr><td>Subtotal:</td><td>$899</td></tr>
+        <tr><td>Shipping:</td><td>$5</td></tr>
+        <tr class="total"><td>Total:</td><td>$904</td></tr>
+      </table>
+      <button type="submit">Place Order</button>
+    </div>
+  </form>
+</section>
+
+<section class="subscribe">
+  <h3>Subscribe</h3>
+  <p>Get the latest deals & updates straight to your inbox</p>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</section>
+
+<footer>
+  <div>
+    <h4>ElectroMart</h4>
+    <p>Powering Your Life<br>One Gadget at a Time</p>
+  </div>
+  <div>
+    <h4>ABOUT</h4>
+    <a href="#">About Us</a>
+    <a href="#">Our Services</a>
+    <a href="#">Contact</a>
+    <a href="#">Terms & Condition</a>
+  </div>
+  <div>
+    <h4>CATEGORY</h4>
+    <a href="#">Smartphones</a>
+    <a href="#">Televisions</a>
+    <a href="#">Laptops</a>
+    <a href="#">Mobiles</a>
+  </div>
+  <div>
+    <h4>CONTACT US</h4>
+    <p>📍 Any town, USA 12345</p>
+    <p>✉️ info@example.com</p>
+    <p>📞 (123) 456-7890</p>
+  </div>
+</footer>
+
+</body>
+</html>
