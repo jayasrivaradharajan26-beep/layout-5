@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support - ElectroMart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+/* Header */
+header {
+  background: #00bfff;
+  color: #000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 { font-size: 22px; }
+
+.search-box {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.search-box input {
+  border: none;
+  outline: none;
+}
+/* Navbar */
+nav {
+  background: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eaeaea;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 25px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+} 
+/* Support Page */
+.support-section {
+  text-align: center;
+  background: #e7f9ff;
+  padding: 50px 20px;
+  margin-top: 20px;
+}
+
+.support-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.chat-btn {
+  background: #00c8ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.icon{
+    font-size: 50px;
+    color: #00b4d8;
+    margin-bottom: 10px;
+}
+.support-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background: #c7f1ff;
+  flex-wrap: wrap;
+}
+
+.option {
+  text-align: center;
+  width: 250px;
+}
+
+.option .icon {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.option h3 {
+  color: #007fa3;
+}
+
+.option p {
+  color: #333;
+  font-size: 14px;
+}
+/* Subscribe */
+.subscribe {
+  background: #c9f4ff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 30px;
+}
+
+.subscribe input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.subscribe button {
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #aef0ff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+footer div { margin: 10px; }
+
+footer h4 { margin-bottom: 10px; }
+
+footer a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 4px 0;
+}
+footer a:hover { color: #00bfff; }
+
+footer .social {
+  text-align: center;
+  margin-top: 10px;
+}
+  </style>
+</head>
+<body>
+<!-- Header -->
+  <header class="header">
+    <div class="logo">Electro<span>Mart</span> ⚡</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <button>🔍</button>
+    </div>
+     <div>24/7 🛒 👤</div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Blogs</a>
+    <a href="#">Categories</a>
+    <a class="active" href="#">Support</a>
+  </nav>
+
+  <!-- Support Section -->
+  <section class="support-section">
+    <h2>24/7 Customer Support 💬</h2>
+    <button class="chat-btn">💬 Chat with us</button>
+  </section>
+
+  <!-- Support Options -->
+  <section class="support-options">
+    <div class="option">
+     <i class="fa-solid fa-box-open icon"></i>
+      <h3>Return & Refunds</h3>
+      <p>Request a return and view the refund policy</p>
+    </div>
+
+    <div class="option">
+      <i class="fa-solid fa-truck-fast icon"></i>
+      <h3>Track Order</h3>
+      <p>Track your order status in real time</p>
+    </div>
+
+    <div class="option">
+    <i class="fa-solid fa-headset icon"></i>
+      <h3>Contact Us</h3>
+      <p>Get in touch with our customer support team</p>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe">
+    <h3>Subscribe</h3>
+    <p>Get the latest deals & update straight to your inbox</p>
+    <div class="subscribe-box">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h2>Electro<span>Mart</span> ⚡</h2>
+        <p>Powering Your Life<br>One Gadget at a Time</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>ABOUT</h4>
+          <p>About Us<br>Our Services<br>Contact<br>Terms & Condition</p>
+        </div>
+        <div>
+          <h4>CATEGORY</h4>
+          <p>Smartphone<br>Televisions<br>Laptops<br>Mobiles</p>
+        </div>
+        <div>
+          <h4>CONTACT US</h4>
+          <p>📍 Any town, USA 12345<br>✉ info@example.com<br>☎ (123) 456-7890</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ElectroMart. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
